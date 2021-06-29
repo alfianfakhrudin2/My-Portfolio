@@ -1,0 +1,25 @@
+body {
+  min-height: 2000px;
+}
+.jumbotron {
+  padding-top: 5rem;
+  background-color: #e2edff;
+}
+
+#projects {
+  background-color: #e2edff;
+}
+
+section {
+  padding-top: 6rem;
+}
+
+.about hr {
+  width: 250px;
+  border-top: 3px solid #666;
+}
+
+.projects hr {
+  width: 4000px;
+  border-top: 3px solid #666;
+}
