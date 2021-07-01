@@ -166,19 +166,19 @@
             <form name="portfolio-Contact-Form">
               <div class="mb-3">
                 <label for="name" class="form-label">Name</label>
-                <input type="name" class="form-control" id="name" aria-describedby="name" name="nama"/>
+                <input type="name" class="form-control" id="name" aria-describedby="name" name="nama" />
                 <div id="name" class="form-text">FULL NAME</div>
               </div>
               <div class="mb-3">
                 <label for="email" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="email" aria-describedby="email" name="email/>
+                <input type="email" class="form-control" id="email" aria-describedby="email" name="email" />
                 <div id="email" class="form-text">Correct email</div>
               </div>
               <div class="mb-3">
                 <label for="Message" class="form-label">Message</label>
                 <textarea class="form-control" id="Message" rows="6" name="pesan"></textarea>
               </div>
-              <button type="submit" class="btn btn-secondary">Submit</button>
+              <button type="submit" class="btn btn-secondary btn-submit">submit</button>
               <button class="btn btn-secondary btn-loading d-none" type="button" disabled>
                 <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
                 Loading...
@@ -206,6 +206,7 @@
     <!-- Akhir Footer-->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
     <script>
       const scriptURL = "https://script.google.com/macros/s/AKfycbyog2a4WffJAeYHNXpLmuY16WJUvgdpvwilejUz2XW0FPitiAwK35FZT_kPg-qL7hokZg/exec";
       const form = document.forms["portfolio-Contact-Form"];
@@ -235,30 +236,3 @@
     </script>
   </body>
 </html>
-<style>
-  body {
-    min-height: 2000px;
-  }
-  .jumbotron {
-    padding-top: 5rem;
-    background-color: #e2edff;
-  }
-
-  #projects {
-    background-color: #e2edff;
-  }
-
-  section {
-    padding-top: 6rem;
-  }
-
-  .about hr {
-    width: 250px;
-    border-top: 3px solid #666;
-  }
-
-  .projects hr {
-    width: 4000px;
-    border-top: 3px solid #666;
-  }
-</style>
