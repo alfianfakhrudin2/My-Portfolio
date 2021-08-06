@@ -48,15 +48,15 @@ section {
  color: white;
  transition: 0.5s;
 }
- .bi-github:hover {
- color: #000;
+.bi-github:hover {
+  color: #000!important;
 }
-.fab-instagram:hover {
-  color: #c13584;
+.bi-instagram:hover {
+  color: #c13584!important;
 }
 .bi-linkedin:hover {
-  color: #286782;
+  color: #286782!important;
 }
-.fab-twitter:hover {
-  color: #1da1f3;
+.bi-twitter:hover {
+  color: #1da1f3!important;
 }
