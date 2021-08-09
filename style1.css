@@ -47,7 +47,8 @@ section {
 .bi-github,
 .fa-instagram,
 .bi-linkedin,
-.fa-twitter {
+.fa-twitter,
+.bi-facebook {
   color: white;
   transition: 0.5s;
 }
@@ -62,4 +63,7 @@ section {
 }
 .bi-twitter:hover {
   color: #1da1f3!important;
+}
+.bi-facebook:hover{
+color:#3b5998!important;
 }
