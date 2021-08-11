@@ -67,3 +67,20 @@ section {
 .bi-facebook:hover{
 color:#3b5998!important;
 }
+.gotopbtn {
+position: fixed;
+  width: 40px;
+  height: 40px;
+  background: #white;
+  bottom: 20px;
+  right: 25px;
+
+  text-decoration: none;
+  text-align: center;
+  line-height: 40px;
+  color: white;
+  font-size: 30px;
+}
+.gotopbtn:hover {
+color: #27ae60;
+}
