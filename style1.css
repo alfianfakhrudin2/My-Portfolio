@@ -78,9 +78,9 @@ position: fixed;
   text-decoration: none;
   text-align: center;
   line-height: 40px;
-  color: white;
+  color: #28cdd8;
   font-size: 30px;
 }
 .gotopbtn:hover {
-color: #27ae60;
+color: #46ff83;
 }
