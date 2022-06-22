@@ -1,3 +1,4 @@
+<!-- menghubungkan submit btn -->
 const scriptURL =
     "https://script.google.com/macros/s/AKfycbyog2a4WffJAeYHNXpLmuY16WJUvgdpvwilejUz2XW0FPitiAwK35FZT_kPg-qL7hokZg/exec";
 const form = document.forms["portfolio-Contact-Form"];
