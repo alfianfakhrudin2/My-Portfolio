@@ -1,34 +1,113 @@
 body {
   color: white;
 }
+
+html{
+  scroll-behavior: smooth;
+}
+
+#hello {
+  font-family: "Stardos Stencil", serif;
+}
+
+#skill {
+  font-family: 'El Messiri', sans-serif;
+}
+
+#contact {
+  font-family: 'El Messiri', sans-serif;
+}
+
+#about {
+  font-family: "Flamenco", serif;
+  font-family: "Voces", serif;
+}
+
+/* untuk navbar */
 .navbar,
 footer {
-  background-color: #192428;
+  background-color: #192734;
+  opacity: 0.8;
+  filter: blur(0px);
 }
+
+.navbar .navbar-brand {
+  font-weight: 700;
+}
+
+.navbar .navbar-brand span{
+  color: #2da7c5;
+}
+
 .penghalang {
   height: 110px;
 }
+
+.underline{border-bottom: solid 2px white;
+  margin: 1em auto 3em;
+  
+  width: 9rem;
+}
+
+/* background colo untuk section hello, skill, adn contact */
 #hello,
 #skill,
 #contact {
-  background-color: #2d383c;
+  background-color: #192734;
 }
 #about,
 #projects {
-  background-color: #414c50;
+  background-color: #22303C;
 }
-.card {
-  background-color: #2d383c;
+
+.nav-item{
+  font-size: 20px;
+  font-family: 'El Messiri', sans-serif;
+  display: inline-block;
 }
+
+.navbar .navbar-nav a::after {
+  content: '';
+  display: block;
+  padding-bottom: 0.3rem;
+  border-bottom: 0.1rem solid orangered;
+  transform: scaleX(0);
+  transition: 0.4s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}
+
 .sosial-media {
   letter-spacing: 20px;
 }
+
 section {
   padding-top: 6rem;
 }
+
+.form-label{
+  font-weight: 100;
+  font-size: 20px;
+}
+
+.imgku{
+  /* width: 347px; */
+  border-radius: 9px;
+  transition: transform .2s;
+}
+
+.imgku:hover{
+  transform: scale(1.1);
+}
+
 .card {
   border: 4px solid #2d383c;
+  background-color: #2d383c;
 }
+
+/* untuk color icon pada tools and skill */
 .html-color {
   color: #ff5733;
 }
@@ -44,6 +123,15 @@ section {
 .git-color {
   color: #f1502f;
 }
+.Figma-color{
+  color: whitesmoke;
+}
+.php-color{
+  color: #2A4758;
+}
+
+
+/* untuk social media icons */
 .bi-github,
 .fa-instagram,
 .bi-linkedin,
@@ -53,34 +141,123 @@ section {
   transition: 0.5s;
 }
 .bi-github:hover {
-  color: #000!important;
+  color: #000 !important;
 }
 .bi-instagram:hover {
-  color: #c13584!important;
+  color: #c13584 !important;
 }
 .bi-linkedin:hover {
-  color: #286782!important;
+  color: #2867b2 !important;
 }
 .bi-twitter:hover {
-  color: #1da1f3!important;
+  color: #1da1f3 !important;
 }
-.bi-facebook:hover{
-color:#3b5998!important;
+.bi-facebook:hover {
+  color: #3b5998 !important;
 }
+/* button back to top */
 .gotopbtn {
-position: fixed;
+  position: fixed;
   width: 40px;
   height: 40px;
-  background: #white;
+  /* background: #ffff; */
   bottom: 20px;
   right: 25px;
-
   text-decoration: none;
   text-align: center;
   line-height: 40px;
   color: #28cdd8;
   font-size: 30px;
+  opacity: 0;
+  display:flex;
+  transition: all .4s;
+  pointer-events: none;
 }
+
+.gotopbtn.active{
+  bottom: 32px;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+
 .gotopbtn:hover {
-color: #46ff83;
+  color: #46ff83;
+}
+
+/* untuk memodifikasi scrolllbar */
+::-webkit-scrollbar {
+  width: 10px;
+  }
+  
+  /* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  background: #0000; 
+  border-radius: 21px;
+  }
+  /* Handle */
+::-webkit-scrollbar-thumb {
+  background: -webkit-linear-gradient(90deg, hsla(221, 45%, 73%, 1) 0%, hsla(220, 78%, 29%, 1) 100%);
+  border-radius: 21px;
+  }
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: -webkit-linear-gradient(90deg, hsla(221, 45%, 73%, 1) 0%, hsla(220, 78%, 29%, 1) 100%); 
+  }
+
+/* ================breakpoints======================== */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+  .html-st,
+  .boostrap-st,
+  .git-st,
+  .css-st,
+  .js-st {
+    transform: rotate(0deg);
+  }
+  .html-st {
+    color: #ff5733;
+  }
+  .boostrap-st {
+    color: #9147fe;
+  }
+  .css-st {
+    color: skyblue;
+  }
+  .js-st {
+    color: #f0db4f;
+  }
+  .git-st {
+    color: #f1502f;
+  }
+  .bi-github {
+    color: #000;
+  }
+  .fa-instagram {
+    color: #c13584;
+  }
+  .bi-linkedin {
+    color: #2867b2;
+  }
+  .fa-twitter {
+    color: #1da1f2;
+  }
+  .bi-facebook {
+    color: #3b5998;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 }
